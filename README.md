@@ -2,7 +2,8 @@
 
 LOGİN SAYFASI
  
-![image](https://user-images.githubusercontent.com/101343622/229382729-1fd5f70c-40dc-4047-a0b2-4d61a5314113.png)
+ ![image](https://user-images.githubusercontent.com/101343622/229382718-aee3f0d9-0450-4942-ac44-5933df7a907f.png)
+
 
 Login Admin Bilgileri: Vatandaşlık Numarası:1234 --- Şifre:1234
 Login Kullanıcı Bilgileri: Vatandaşlık Numarası:4321 --- Şifre:4321
@@ -11,8 +12,7 @@ DİL AYARLARI
 Sağ üstte bulunan dropdown yardımı ile dil seçenekleri ayarlanabilmektedir.
 
 Şifremi Unuttum Kısmı
-
- ![image](https://user-images.githubusercontent.com/101343622/229382718-aee3f0d9-0450-4942-ac44-5933df7a907f.png)
+![image](https://user-images.githubusercontent.com/101343622/229382729-1fd5f70c-40dc-4047-a0b2-4d61a5314113.png)
 
 Şifremi unuttum sayfasına ilk girildiğinde Vatandaşlık numarası bilgisi istenmektedir. 3 hatalı girişte tekrar deneme şansı verilmemektedir. İnput disabled olmaktadır ve tekrar deneme yapabilmek için geri dön butonuna basılarak sayfaya tekrar giriş yapılması gerekmektedir.
  ![image](https://user-images.githubusercontent.com/101343622/229382737-379e4366-2180-48d5-8d5f-85324f9a4a3d.png)
