@@ -1,0 +1,34 @@
+main{
+    display: grid;
+    grid-template-rows: 5% 15% 80%;
+    height: 1200px;
+    background-image: url(/assets/Images/bg4.jpg);
+    color: white;
+}
+
+
+#Field {
+    border: 2px solid black;
+    padding: 5%;
+}
+
+#Field legend{
+    font-size: 30pt;
+    background-color:#006754;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+}
+#Field form{
+    margin-top: 100px;
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(1,9fr);
+    grid-gap: 20px;
+}
+#language{
+    grid-column: 9/10;
+    width: 100%;
+    margin-right: 0px;
+}

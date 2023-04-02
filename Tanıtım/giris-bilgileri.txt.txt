@@ -1,0 +1,3 @@
+Admin Girişi : Vatandaşlık Numarası:1234  Şifre:1234
+--------------------------------------------------------------
+Normal Kullanıcı Girişi: Vatandaşlık Numarası:4321  Şifre:4321
