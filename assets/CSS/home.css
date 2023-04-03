@@ -119,7 +119,7 @@ legend{
    } 
    main nav .nav-links .nav-link{
    width: max-content;   
-}  
+   }  
    section{
     grid-template-columns: 90%;
     grid-template-rows: 25% 30% 50%;
