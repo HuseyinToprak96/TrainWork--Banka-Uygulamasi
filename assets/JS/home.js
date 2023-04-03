@@ -419,7 +419,9 @@ switch (method) {
         document.getElementById("style").href="assets/CSS/login.css"
         clearInterval(rInterval)
         onlineUser=""
-        getLogin()
+        var body=document.getElementsByTagName("body")[0]
+        body.innerHTML='<div class="spinner-border text-dark text-center" style="margin-top:300px;margin-left:45%;font-size:450px"></div>'
+        setTimeout(getLogin,1000)
     default:
         break;
 }
@@ -477,22 +479,32 @@ function moneyForm(transaction){
             case 1://Para Çekme
                 var acc=user.accounts.find(x=>x.accountNumber==accountsSelect.value)
                 if (Number(acc.balance)>=Number(inputAmount.value)) {
+                    if (Number(inputAmount.value)%10==0) {
                 acc.balance=Number(acc.balance)-Number(inputAmount.value)
                 var d=new Date().toLocaleString()
                 var t=new AccountTransaction(accountsSelect.value,"",inputAmount.value,d,2)
                 AccountTransactions.push(t)
                 withDraw()
+                    }
+                    else{
+                        alert(languageContents.find(x=>x.page=="money"&&x.name=="error10Tl" &&x.languageId==languageId).value)
+                    }
                 }else{
                     alert(languageContents.find(x=>x.page=="money"&&x.name=="err1" &&x.languageId==languageId).value.replace("{0}",acc.balance))
                 }
                 break;
             case 2://Para Yükle
+                if (Number(inputAmount.value)%10==0) {
                 var acc=user.accounts.find(x=>x.accountNumber==accountsSelect.value)
                 acc.balance=Number(acc.balance)+Number(inputAmount.value)
                 var d=new Date().toLocaleString()
                 var t=new AccountTransaction("",accountsSelect.value,inputAmount.value,d,3)
                 AccountTransactions.push(t)
                 getDeposit()
+                }
+                else{
+                    alert(languageContents.find(x=>x.page=="money"&&x.name=="error10Tl2" &&x.languageId==languageId).value)
+                }
                 break
             default:
                 break;

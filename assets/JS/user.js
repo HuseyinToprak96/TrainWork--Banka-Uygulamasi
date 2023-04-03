@@ -74,7 +74,9 @@ function login(){
         homeScript.id="homeScripts"
         document.getElementById("style").href="assets/CSS/home.css"
         body.appendChild(homeScript)
-        setTimeout(goHome,100)
+        body.style.backgroundColor="black"
+        body.innerHTML='<div class="spinner-border text-dark text-center" style="margin-top:300px;margin-left:45%;font-size:450px"></div>'
+        setTimeout(goHome,1000)
     }
     else{
         errorLogin(languageContents.find(x=>x.page=="login"&&x.name=="RemainingEntry" &&x.languageId==languageId).value+(2-failedLogin))

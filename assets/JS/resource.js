@@ -1472,6 +1472,34 @@ var languageContents=[
         value:"Hesaplar",
         languageId:1
     },
+    {
+        id:169,
+        page:"money",
+        name:"error10Tl",
+        value:"You can with draw 10 TL or its multiples!",
+        languageId:2
+    },
+    {
+        id:170,
+        page:"money",
+        name:"error10Tl",
+        value:"10 TL veya katlarında çekim yapabilirsiniz!",
+        languageId:1
+    },
+    {
+        id:171,
+        page:"money",
+        name:"error10Tl2",
+        value:"You can deposit 10 TL or its multiples!",
+        languageId:2
+    },
+    {
+        id:172,
+        page:"money",
+        name:"error10Tl2",
+        value:"10 TL veya katlarında yatırım yapabilirsiniz!",
+        languageId:1
+    },
 ]
 
 
